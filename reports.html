@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - Woodcraft</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <a href="index.html" class="sidebar-brand">
+            <i class="fa-solid fa-tree"></i> Woodcraft
+        </a>
+        <div class="nav flex-column">
+            <a href="index.html" class="nav-link"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+            <a href="orders.html" class="nav-link"><i class="fa-solid fa-box-open"></i> Orders</a>
+            <a href="inventory.html" class="nav-link"><i class="fa-solid fa-warehouse"></i> Inventory</a>
+            <a href="employees.html" class="nav-link"><i class="fa-solid fa-users"></i> Employees</a>
+            <a href="billing.html" class="nav-link"><i class="fa-solid fa-file-invoice-dollar"></i> Billing</a>
+            <a href="reports.html" class="nav-link active"><i class="fa-solid fa-chart-pie"></i> Reports</a>
+            <a href="#" class="nav-link"><i class="fa-solid fa-gear"></i> Settings</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <!-- Top Navbar -->
+        <header class="top-navbar">
+            <div class="d-flex align-items-center">
+                <button class="icon-btn d-md-none me-3" onclick="toggleSidebar()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <h2 class="page-title">Reports & Analytics</h2>
+            </div>
+            <div class="navbar-actions">
+                <div class="search-bar d-none d-md-block">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <button class="icon-btn"><i class="fa-regular fa-bell"></i></button>
+                <button class="icon-btn"><i class="fa-regular fa-circle-user"></i></button>
+            </div>
+        </header>
+
+        <!-- Page Content -->
+        <main class="content-wrapper">
+            
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h4 class="mb-0">Financial & Performance Reports</h4>
+                <button class="btn btn-outline-secondary">
+                    <i class="fa-solid fa-download me-1"></i> Export PDF
+                </button>
+            </div>
+
+            <div class="row">
+                <!-- Income vs Expenses Chart -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            Income vs Expenses (6 Months)
+                        </div>
+                        <div class="card-body" style="height: 350px;">
+                            <canvas id="incomeExpenseChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Orders Per Month Chart -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            Orders per Month
+                        </div>
+                        <div class="card-body" style="height: 350px;">
+                            <canvas id="ordersChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            Summary Insights
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Revenue Trend:</strong> Overall revenue has increased by 15% compared to the previous quarter. The best performing month was June.</p>
+                            <p><strong>Expenses:</strong> Expenses have remained relatively stable, with a slight peak in April due to bulk material restocking.</p>
+                            <p><strong>Order Volume:</strong> Order volume is growing steadily. Recommend increasing stock levels for fast-moving items like Oak Wood to prevent bottlenecks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
