@@ -54,8 +54,8 @@ Copy the entire project folder into your local server's web root:
 
 | Server | Path |
 |--------|------|
-| XAMPP  | `C:\xampp\htdocs\Usman\` |
-| WAMP   | `C:\wamp64\www\Usman\` |
+| XAMPP  | `C:\xampp\htdocs\Salman\` |
+| WAMP   | `C:\wamp64\www\Salman\` |
 
 ### Step 2 — Start Your Local Server
 
@@ -85,7 +85,7 @@ define('DB_PASS', '');       // Your MySQL password (default: empty for XAMPP)
 
 ### Step 5 — Open the Application
 
-Go to: **`http://localhost/Usman/login.html`**
+Go to: **`http://localhost/Salman/login.html`**
 
 #### First-Time Setup:
 1. Click **"Create admin account"**
@@ -99,7 +99,7 @@ Go to: **`http://localhost/Usman/login.html`**
 ## 📁 Project Structure
 
 ```
-Usman/
+Salman/
 ├── api/
 │   ├── auth.php          # Register, login, logout, session check
 │   ├── billing.php       # Billing CRUD API
@@ -153,7 +153,7 @@ This project is for educational purposes.
 
 ---
 
-> Built with ❤️ by Usman
+> Built with ❤️ by Salman
 # 🪵 Woodcraft — Business Management System
 
 A full-stack web application for managing a woodcraft/carpentry business. Built with **HTML, CSS, JavaScript** (frontend) and **PHP + MySQL** (backend), it covers everything from orders and inventory to employee management and billing — all behind a secure login system.
@@ -210,8 +210,8 @@ Copy the entire project folder into your local server's web root:
 
 | Server | Path |
 |--------|------|
-| XAMPP  | `C:\xampp\htdocs\Usman\` |
-| WAMP   | `C:\wamp64\www\Usman\` |
+| XAMPP  | `C:\xampp\htdocs\Salman\` |
+| WAMP   | `C:\wamp64\www\Salman\` |
 
 ### Step 2 — Start Your Local Server
 
@@ -241,7 +241,7 @@ define('DB_PASS', '');       // Your MySQL password (default: empty for XAMPP)
 
 ### Step 5 — Open the Application
 
-Go to: **`http://localhost/Usman/login.html`**
+Go to: **`http://localhost/Salman/login.html`**
 
 #### First-Time Setup:
 1. Click **"Create admin account"**
@@ -255,7 +255,7 @@ Go to: **`http://localhost/Usman/login.html`**
 ## 📁 Project Structure
 
 ```
-Usman/
+Salman/
 ├── api/
 │   ├── auth.php          # Register, login, logout, session check
 │   ├── billing.php       # Billing CRUD API
@@ -309,4 +309,5 @@ This project is for educational purposes.
 
 ---
 
-> Built with ❤️ by Usman
+> Built with ❤️ by Salman
+
